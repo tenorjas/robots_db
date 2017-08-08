@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>People</title>
+  <link rel="stylesheet" href="/people.css">
+</head>
+
+<body>
+  <div class="profile_wrapper">
+    <div class="avatar_and_side_data">
+      <div class="avatar"><img src="{{avatar}}" , alt=""></div>
+      <div class="side_data">
+        <h2>{{name}}</h2>
+        {{#address.city}}
+          <p>{{address.city}},
+        {{/address.city}}
+        {{address.country}} |
+        {{#job}}
+          {{job}}, {{company}}</p>
+        {{/job}}
+        {{^job}}
+        <span class="no-job">Available for hire</span>
+        {{/job}}
+        <p>{{email}} | {{phone}}</p>
+      </div>
+    </div>
+    <div class="ed_skills">
+      <dl>
+        {{#university}}
+          <dt>Education</dt>
+          <dd>{{university}}</dd>
+        {{/university}}
+        <dt>Skills</dt>
+        {{#skills}}
+          <dd>{{.}}</dd>
+        {{/skills}}
+      </dl>
+    </div>
+  </div>
+</body>
+
+</html>

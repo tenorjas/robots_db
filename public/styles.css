@@ -1,0 +1,46 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+h1 {
+  font-family: sans-serif;
+  justify-content: center;
+}
+
+.directory-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  border-style: solid;
+  border-width: thin;
+  margin: 22px;
+  width: 20%;
+}
+
+h2 a {
+  text-decoration: none;
+  font-family: sans-serif;
+  width: 100%;
+  margin-left: 15px;
+  text-align: left;
+  color: #238aa1;
+}
+
+p {
+  font-family: sans-serif;
+  margin-left: 15px;
+  width: 100%;
+}
+
+.no-job {
+  color: red;
+}

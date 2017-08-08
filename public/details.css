@@ -1,0 +1,50 @@
+body {
+  font-family: sans-serif;
+}
+
+.profile_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar_and_side_data {
+  display: flex;
+  flex-direction: row;
+}
+
+h2 {
+  font-weight: lighter;
+  font-size: 36pt;
+}
+
+img {
+  padding: 10px;
+  border-radius: 6em;
+  border-style: solid;
+  border-width: thin;
+  border-color: #666;
+  margin-top: 30px;
+}
+
+.side_data {
+  margin-left: 20px;
+}
+
+.no-job {
+  color: red;
+}
+
+dt {
+  float: left;
+  font-weight: bold;
+  text-align: right;
+  display: block;
+  width: calc(150px + 1.5em);
+  margin-bottom: 0.5em;
+}
+
+dd {
+  margin-left: calc(150px + 3em);
+  margin-bottom: 0.5em;
+}
